@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Surya Bakery</title>
+<style>
+    body {
+        text-align: center;
+        background: #fffaf0;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        color: #4a3525;
+    }
+    
+        h1 {
+        color: #d97706;
+        animation: bounce 2s infinite;
+    }
+
+        }
+
+        marquee {
+        background: orange;
+        color: white;
+        padding: 8px;
+        font-weight: bold;
+        width: 80%;
+        border-radius: 4px;
+        margin: 15px auto;
+        display: block;
+    }
+
+    
+    .box {
+        background: white;
+        display: inline-block;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        text-align: left;
+        margin: 10px;
+        vertical-align: top;
+        width: 200px;
+        transition: 0.3s;
+    }
+
+    .box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(217, 119, 6, 0.2);
+    }
+
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+    }
+    
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+    }
+</style>
+</head>
+<body>
+
+    <h1>Welcome To Surya Bakery</h1>
+    <marquee scrollamount="5">Welcome To Surya Bakery - Fresh Hot Tea & Snacks Available!</marquee>
+
+   
+    <div style="margin-top: 20px;">
+        <div class="box">
+            <h3>Menu item</h3>
+            <ol>
+                <li>Tea</li>
+                <li>Coffee</li>
+                <li>Choclates</li>
+                <li>Biscuit</li>
+            </ol>
+        </div>
+
+        <div class="box">
+            <h3>Special</h3>
+            <ul type="circle">
+                <li>Chips item</li>
+                <li>Biscuit</li>
+                <li>Choclates</li>
+                <li>Coffee</li>
+                <li>Tea</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
